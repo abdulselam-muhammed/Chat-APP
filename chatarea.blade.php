@@ -37,8 +37,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>   
    var auth_user = `{{auth()->id()}}`;
-    var pusher = new Pusher('327269183e55f1f5d6d8', {
-        authEndpoint: '/broadcasting/auth',
+    var pusher = new Pusher('your-key', {
+        authEndpoint: '/broadcasting/auth', // if Not Auto
         cluster: 'eu',
         useTLS: true 
     });
